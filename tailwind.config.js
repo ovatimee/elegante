@@ -4,7 +4,11 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./layouts/**/*.{js,ts,jsx,tsx}",
   ],
+  images: {
+    domains: ['eimages.valtim.com'],
+  },
   theme: {
     extend: {
       colors: {

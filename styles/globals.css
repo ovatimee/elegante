@@ -4,19 +4,15 @@
 
 @layer components {
   .container {
-    @apply max-w-7xl mx-auto px-4
-  }
-  .icon-small,
-  .icon-large {
-    @apply flex items-center px-1 font-normal 
+    @apply max-w-7xl mx-auto p-1 md:px-8
   }
 
   .icon-small {
-    @apply text-xl ml-auto
+    @apply text-xl ml-auto flex items-center px-1 font-normal 
   }
 
   .icon-large {
-    @apply text-2xl pr-3
+    @apply text-2xl pr-3 flex items-center px-1 font-normal 
   }
 
   .media {
@@ -40,6 +36,17 @@
   }
 
   .mini-text {
-      @apply text-xs text-light-bg-color
+      @apply text-xs text-light-text-color
     }
+    .circle {
+      @apply absolute -top-4 left-0 w-9 h-9 rounded-full bg-light-bg-color -z-10 before:content-[''] before:absolute before:w-7 before:h-7 before:rounded-full before:bg-secondary-color before:bottom-1 before:right-1 before:opacity-50
+    }
+
+.fly-item {
+    @apply absolute h-3 text-xs p-1 text-center leading-[10px] text-white
+  }
+
+.header-nav .mini-cart .price .fly-item {
+    @apply top-[50%] -mt-6 w-8 rounded-sm -right-8 bg-primary-color
+  }
 }
