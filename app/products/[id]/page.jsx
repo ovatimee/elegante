@@ -1,6 +1,7 @@
 import React from 'react'
 
-export default function Product() {
+export default function Product({ params }) {
+  const id = params.id
   return (
         <div class="single-product">
           <div class="container">
@@ -10,7 +11,6 @@ export default function Product() {
                  {/*  <% product.categories.split(">").map((crum, i) => { %> */}
                  {/*    <li><a href="#"> <%= crum %> </a></li> */}
                  {/* <% }) %>  */}
-                 
                 </ul>
               </div>
               <div class="column">
